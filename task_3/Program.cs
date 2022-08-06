@@ -5,19 +5,15 @@
 
 Console.Write("Введите число N: "); 
 int n = int.Parse(Console.ReadLine());
-int count = 1 ;
-while (true)
+int x = 1 ;
+while (x <= n)
 {
-    if (count <=n)
+    if (x % 2 == 0 )
     {
-        Console.Write($"{count}");
-        count++; 
-    }
-    if (count % 2 == 0)
-    {
-        break;
-    }
-    
+        Console.Write($"{x},");
+        
+    }  
+    x++;
 }
 
 
